@@ -1,20 +1,17 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "tnh", // [กริบ] เปลี่ยนให้ตรงกับชื่อ Worker ใน Dashboard
+  "name": "tnh", 
   "main": "cmd/main.go",
   "compatibility_date": "2026-03-28",
-  
   "build": {
     "command": "GOOS=js GOARCH=wasm go build -o index.wasm ./cmd/main.go"
   },
-
   "kv_namespaces": [
     {
       "binding": "KV",
       "id": "3d180da092ea4cfeb70c027d7ab11098"
     }
   ],
-
   "d1_databases": [
     {
       "binding": "DB",
@@ -22,11 +19,9 @@
       "database_id": "6a8b4373-bf40-4b63-bb02-f612ecbe63b7"
     }
   ],
-
   "ai": {
     "binding": "AI"
   },
-
   "observability": {
     "enabled": true,
     "head_sampling_rate": 1
