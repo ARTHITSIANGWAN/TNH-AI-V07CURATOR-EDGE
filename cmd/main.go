@@ -1,27 +1,44 @@
 package main
 
 import (
+	"context"
 	"github.com/gofiber/fiber/v2"
 	"github.com/syumai/workers"
 	"github.com/syumai/workers/adapter"
-	"github.com/ARTHITSIANGWAN/thitnueahub-music-v7/pkg/core" // พิกัด 4 มหาธาตุ
+	"github.com/syumai/workers/cloudflare/kv"
+	
+	// 📍 พิกัด Import ต้องเปลี่ยนตามชื่อ Repo ใหม่ของบอส!
+	"github.com/ARTHITSIANGWAN/thitnueahub-post-the-curator-V7/pkg/core" 
 )
 
 func main() {
-	app := fiber.New()
+	app := fiber.New(fiber.Config{
+		CaseSensitive: false,
+	})
 
-	app.Post("/v7/ignite", func(c *fiber.Ctx) error {
+	// 🎭 The Curator: Content Matrix Ignite
+	app.Post("/v7/curate", func(c *fiber.Ctx) error {
+		// Get from LayerPool (Zero Garbage)
 		layer := core.LayerPool.Get().(*core.ContentLayer)
 		defer core.LayerPool.Put(layer)
-		
+
+		if err := c.BodyParser(layer); err != nil {
+			return c.Status(400).JSON(fiber.Map{"status": "error", "msg": "invalid matrix"})
+		}
+
+		// Save to KV (3d180d...98)
+		ctx := context.Background()
+		_ = kv.Namespace("KV").Put(ctx, "last_curated_hook", []byte(layer.Hook), nil)
+
 		return c.JSON(fiber.Map{
-			"status": "ignited",
-			"worker": "tnh", // ระบุชื่อร่างที่ 2 ให้ชัด
-			"engine": "v7-matrix",
+			"status": "curated",
+			"worker": "tnh-curator",
+			"hook":   layer.Hook,
+			"engine": "zero-garbage-2000%",
 		})
 	})
 
-	// 🥄 เสียบสดผ่าน Adapter (ห้ามมี Listen!)
+	// 🥄 Plug and Play (No Listen!)
 	workers.Serve(adapter.FiberApp(app))
 }
 
