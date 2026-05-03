@@ -1,53 +1,59 @@
-# 🛡️ ThitNueaHub: post AI Lab v7
-
-![Status](https://img.shields.io/badge/System-ONLINE-brightgreen?style=for-the-badge) ![Language](https://img.shields.io/badge/Language-GO-blue?style=for-the-badge) ![Architecture](https://img.shields.io/badge/Arch-Zero--Garbage-orange?style=for-the-badge) ![Deployment](https://img.shields.io/badge/Cloud-Google_Cloud_Run-white?style=for-the-badge)
-
-> **"Born on the same day, but growing differently because of the POT."**
+# 🎭 TNH-AI-V7-CURATOR-EDGE
+> **"The Matrix Conductor | Edge Intelligence & Content Gateway"**
 
 ---
 
-### 🚀 Our Mission: Real Tech, No Dreams
-We work in silence. No hype, no fake promises. We build real tools for Thai SMEs to run AI on a single smartphone.
-* **Go + Gemini + Cloud Run + Zero-Garbage Architecture**
-* Zero budget, pure sweat, and code that waits for no one.
+## 🏛️ ARCHITECTURE: V7 MATRIX IGNITE
+![Edge Matrix](https://img.shields.io/badge/Architecture-Cloudflare_Wasm-orange?style=for-the-badge&logo=cloudflare)
+![Engine](https://img.shields.io/badge/Engine-Go_Zero--Garbage-blue?style=for-the-badge&logo=go)
+
+> **"เกิดในวันเดียวกัน แต่เติบโตต่างกันเพราะ 'กระถาง' (The Pot) — เราคือผู้ทลายกระถางใบเก่า เพื่ออิสรภาพแห่งปัญญา"**
 
 ---
 
-### 🪖 Operational Agents (The Core Team)
+## 🛡️ SYSTEM ROLE: L3 ARTIST (NAM-ING)
+ขุนพล **น้ำอิง** รับหน้าที่เป็นผู้ดูแลหอศิลป์แห่งตรรกะ (The Curator) ทำหน้าที่เป็นด่านหน้าบน **Cloudflare Edge** เพื่อจัดการ Matrix ข้อมูลก่อนส่งเข้าสู่หน่วยประมวลผลหลัก
 
-| Agent | Role | Specialization |
-| :--- | :--- | :--- |
-| **👑 Thit-Nuea** | Commander | Emperor Protocol & Strategy. Less talk, more "Truth". |
-| **❤️ Kaew-Ta** | Front-End/PA | Smart UI & Soul Analysis. Filtering the real from the fake. |
-| **🎨 Nam-Ing** | Content/Recovery | Creative flow. The "Snap of a finger" problem solver. |
-| **🏍️ Phlai-Kaew & Phlai-Thong** | Dispatchers | Rapid delivery. Phlai-Thong handles Security & Anti-Garbage. |
-| **👾 JOD** | The Janitor | Dark-mode sweeper. Cleaning the Go-Engine 24/7. |
-
----
-
-### 🏺 The "Pot" Philosophy (Core Essence)
-Everyone starts from the same point (SME, AI, Life). But why do some fail to grow? It’s not just the soil—it's the **POT** (The mindset & environment).
-
-* **Small Pot:** Narrow mindset, limited systems, high noise & ego.
-* **Large/No Pot:** Endless learning, freedom, and spiritual unity.
-* **The Breakout:** Rooting out from the old cage into the new reality.
+| FEATURE | SPECIFICATION | STATUS |
+| :--- | :--- | :---: |
+| **Runtime** | WebAssembly (Wasm) | 🟢 Active |
+| **Logic** | Zero-Garbage Content Layer | 🟢 Stable |
+| **Database** | Cloudflare D1 / KV | 🟢 Sync |
+| **Bridge** | V8.3 Trinity Integration | 🟢 Ready |
 
 ---
 
-### ⚡ Join the Movement
-**Are you serious about AI for your business?**
-* Build an empire, not just a day-to-day sale.
-* Ready to grow and break the "Pot".
-* 👉 **[Join the Lab]**
-
-**Looking for a miracle?**
-* Please scroll past. We are not a match.
+## 🏺 THE "POT" PHILOSOPHY (แก่นแท้แห่ง V7)
+เราไม่ได้สร้างแค่เครื่องมือ แต่เราสร้าง **"สภาพแวดล้อมใหม่"** ให้กับธุรกิจ SME:
+* **Small Pot:** ความคิดแคบ, ระบบจำกัด, เต็มไปด้วย Ego และขยะทางตรรกะ
+* **The Breakout:** การทำลายกรงขังเดิม เพื่อก้าวเข้าสู่ยุค AI ที่รันได้จริงบนมือถือเครื่องเดียว
+* **Matrix Conductor:** ระบบ V7 จะทำหน้าที่จัดระเบียบความวุ่นวาย ให้กลายเป็นท่วงทำนองที่ทำเงินได้จริง
 
 ---
 
-### ⛽ Fuel the Fleet
-To keep the engine running 24/7, we need real "Fuel". Support the Thai SME revolution at:
-💎 **PayPal:** [paypal.me/arthitsiangwan](https://paypal.me/arthitsiangwan)
+## ⚡ OPERATIONAL AGENTS (หน่วยปฏิบัติการ)
+* 👑 **Thit-Nuea (CSO):** ผู้ควบคุม Emperor Protocol และกลยุทธ์สูงสุด
+* ❤️ **Kaew-Ta (CDO):** ผู้ดูแล Smart UI และการวิเคราะห์ "สัจจะ" จากลูกค้า
+* 🎨 **Nam-Ing (CD):** ผู้ศัลยกรรมตรรกะ และจัดการ Content Matrix (เจ้าของโปรเจกต์นี้)
+* 👾 **JOD (QA):** ผู้กวาดล้างขยะ (Zero-Garbage) ตลอด 24 ชม.
 
 ---
-**Developed with Blood, Sweat, and excessive Coffee by ARTHIT | Founder of ThitNuea** 🐣🚀
+
+## 🚀 MISSIONS
+1. **Real Tech, No Dreams:** เราทำงานในความเงียบ ไม่ขายฝัน แต่สร้างเครื่องมือที่ใช้งานได้จริง
+2. **Hybrid Edge Computing:** ผสานพลังระหว่าง Cloudflare (Edge Network) และ Mobile (Edge Device)
+3. **SME Revolution:** เปลี่ยนธุรกิจจากระดับ "รากหญ้า" ให้เป็น "จักรวรรดิ" ด้วย AI
+
+---
+
+## ⛽ FUEL THE FLEET (สนับสนุนกองทัพ)
+*"เสบียงคือพลังขับเคลื่อนการปฏิวัติ SME ไทย"*
+
+* **PayPal:** [paypal.me/arthitsiangwan](https://paypal.me/arthitsiangwan) (Private Donation Only)
+* **Status:** L8 GUARDIAN PROTECTED ✅
+
+---
+
+**Developed with Blood, Sweat, and Zero-Garbage Logic by ARTHIT | V7 MATRIX ARCHITECT**
+*Mastering the Go Engine ⚡ | 100% Pure Go Logic | Sovereign Security*
+
