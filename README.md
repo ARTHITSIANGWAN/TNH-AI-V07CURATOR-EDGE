@@ -1,4 +1,4 @@
-# 🛡️ ThitNueaHub: Mobile AI Lab v7
+# 🛡️ ThitNueaHub: post AI Lab v7
 
 ![Status](https://img.shields.io/badge/System-ONLINE-brightgreen?style=for-the-badge) ![Language](https://img.shields.io/badge/Language-GO-blue?style=for-the-badge) ![Architecture](https://img.shields.io/badge/Arch-Zero--Garbage-orange?style=for-the-badge) ![Deployment](https://img.shields.io/badge/Cloud-Google_Cloud_Run-white?style=for-the-badge)
 
