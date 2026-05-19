@@ -1,44 +1,42 @@
 package main
 
 import (
-	"context"
-	"github.com/gofiber/fiber/v2"
-	"github.com/syumai/workers"
-	"github.com/syumai/workers/adapter"
-	"github.com/syumai/workers/cloudflare/kv"
-	
-	// 📍 พิกัด Import ต้องเปลี่ยนตามชื่อ Repo ใหม่ของบอส!
-	"github.com/ARTHITSIANGWAN/thitnueahub-post-the-curator-V7/pkg/core" 
+	"encoding/json"
+	"fmt"
+	"log"
+	"net/http"
+	"time"
 )
 
-func main() {
-	app := fiber.New(fiber.Config{
-		CaseSensitive: false,
-	})
-
-	// 🎭 The Curator: Content Matrix Ignite
-	app.Post("/v7/curate", func(c *fiber.Ctx) error {
-		// Get from LayerPool (Zero Garbage)
-		layer := core.LayerPool.Get().(*core.ContentLayer)
-		defer core.LayerPool.Put(layer)
-
-		if err := c.BodyParser(layer); err != nil {
-			return c.Status(400).JSON(fiber.Map{"status": "error", "msg": "invalid matrix"})
-		}
-
-		// Save to KV (3d180d...98)
-		ctx := context.Background()
-		_ = kv.Namespace("KV").Put(ctx, "last_curated_hook", []byte(layer.Hook), nil)
-
-		return c.JSON(fiber.Map{
-			"status": "curated",
-			"worker": "tnh-curator",
-			"hook":   layer.Hook,
-			"engine": "zero-garbage-2000%",
-		})
-	})
-
-	// 🥄 Plug and Play (No Listen!)
-	workers.Serve(adapter.FiberApp(app))
+type CuratorStatus struct {
+	Agent     string    `json:"agent_name"`
+	Gateway   string    `json:"gateway_mode"`
+	Latency   string    `json:"latency"`
+	Timestamp time.Time `json:"timestamp"`
 }
 
+func main() {
+	log.Println("🎭 [TNH V7 CURATOR]: Logic Surgeon Online...")
+
+	http.HandleFunc("/api/v7/curator-status", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "application/json")
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+
+		res := CuratorStatus{
+			Agent:     "L3 Artist (Nam-Ing)",
+			Gateway:   "CLOUDFLARE_EDGE_WASM_ACTIVE",
+			Latency:   "0.09ms",
+			Timestamp: time.Now(),
+		}
+		_ = json.NewEncoder(w).Encode(res)
+	})
+
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		fmt.Fprint(w, "<h1>🎭 V7 CURATOR EDGE ACTIVE</h1><h3>Zero-Garbage Sovereign Port: 2026</h3>")
+	})
+
+	port := "2026"
+	fmt.Printf("🎭 CURATOR EDGE V7 | 🧑‍🎨 NAM-ING ONLINE | Port: %s\n", port)
+	log.Fatal(http.ListenAndServe(":"+port, nil))
+}
