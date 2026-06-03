@@ -1,9 +1,9 @@
-# 🎭 TNH-AI-V7-CURATOR-EDGE
+# 🎭 TNH-AI-V07-CURATOR-EDGE
 > **"The Matrix Conductor | Edge Intelligence & Content Gateway"**
 
 ---
 
-## 🏛️ ARCHITECTURE: V7 MATRIX IGNITE
+## 🏛️ ARCHITECTURE: V07 MATRIX IGNITE
 ![Edge Matrix](https://img.shields.io/badge/Architecture-Cloudflare_Wasm-orange?style=for-the-badge&logo=cloudflare)
 ![Engine](https://img.shields.io/badge/Engine-Go_Zero--Garbage-blue?style=for-the-badge&logo=go)
 
@@ -23,7 +23,7 @@
 
 ---
 
-## 🏺 THE "POT" PHILOSOPHY (แก่นแท้แห่ง V7)
+## 🏺 THE "POT" PHILOSOPHY (แก่นแท้แห่ง V07)
 เราไม่ได้สร้างแค่เครื่องมือ แต่เราสร้าง **"สภาพแวดล้อมใหม่"** ให้กับธุรกิจ SME:
 * **Small Pot:** ความคิดแคบ, ระบบจำกัด, เต็มไปด้วย Ego และขยะทางตรรกะ
 * **The Breakout:** การทำลายกรงขังเดิม เพื่อก้าวเข้าสู่ยุค AI ที่รันได้จริงบนมือถือเครื่องเดียว
@@ -54,6 +54,6 @@
 
 ---
 
-**Developed with Blood, Sweat, and Zero-Garbage Logic by ARTHIT | V7 MATRIX ARCHITECT**
+**Developed with Blood, Sweat, and Zero-Garbage Logic by ARTHIT | V07 MATRIX ARCHITECT**
 *Mastering the Go Engine ⚡ | 100% Pure Go Logic | Sovereign Security*
 
